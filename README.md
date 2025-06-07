@@ -59,11 +59,11 @@ yarn dev
 ## Project structure
 
 ```
-/app # Next.js App Router pages and layouts
-/components # Reusable UI components (Navbar, CartPopup, etc.)
-/contexts # React Context for Cart state management
-/styles # Global CSS and Tailwind setup
-/public # Static assets like images or icons
+/app             # Next.js App Router pages and layouts
+/components      # Reusable UI components (Navbar, CartPopup, etc.)
+/contexts        # React Context for Cart state management
+/styles          # Global CSS and Tailwind setup
+/public          # Static assets like images or icons
 ```
 
 ## Approach and Design Choices
