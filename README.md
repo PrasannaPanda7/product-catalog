@@ -42,8 +42,8 @@ Open your terminal and run the following commands step-by-step:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/product-catalog-app.git
-cd product-catalog-app
+git clone git@github.com:PrasannaPanda7/product-catalog.git
+cd product-catalog
 
 # Install dependencies
 npm install
