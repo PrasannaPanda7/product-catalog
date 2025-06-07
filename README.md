@@ -55,3 +55,25 @@ npm run dev
 # or
 yarn dev
 ```
+
+## Project structure
+
+/app # Next.js App Router pages and layouts
+/components # Reusable UI components (Navbar, CartPopup, etc.)
+/contexts # React Context for Cart state management
+/styles # Global CSS and Tailwind setup
+/public # Static assets like images or icons
+
+## Approach and Design Choices
+
+The application uses Next.js App Router for a modern, file-based routing structure optimized for React Server Components.
+
+React Query handles data fetching and caching with an infinite `staleTime` to avoid redundant network requests and improve performance. This also simplifies cache management without manual invalidations.
+
+Global cart state is managed via React Context, providing a simple and effective way to share cart data and actions across components. Cart data is persisted in `localStorage` to maintain state across page reloads.
+
+Tailwind CSS is chosen for rapid UI styling with utility-first classes, keeping CSS minimal and maintainable without separate stylesheets.
+
+The cart popup design allows quick viewing and editing of cart items without navigating away from the page, enhancing user experience.
+
+Error handling and loading states are implemented to improve robustness and provide user feedback during data fetches.
